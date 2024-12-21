@@ -51,7 +51,7 @@ class AuthenticationBloc extends Bloc<AuthenticationEvent, AuthenticationState> 
     emit(AuthenticationLoading());
     final result = await loginUseCase(event.email, event.password);
     result.fold(
-      (failure) => emit( AuthenticationError()),
+      (failure) => emit(AuthenticationError()),
       (authUser) => emit(AuthenticationAuthenticated()),
     );
   }

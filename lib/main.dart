@@ -44,7 +44,8 @@ class MyApp extends StatelessWidget {
       supportedLocales: LanguageMangement.locales,
       localizationsDelegates: LanguageMangement.localizationsDelegates,
       theme: theme.dark(),
-      home: AppLayout(),
+      home: LoginScreen(),
+      // home: TestScreen2(),
       // home: const TestScreen2(),
       // home: const AuthOtpScreen(isPhone: true, contactInfo: '123-456-7890')
       // home: const AuthOtpScreen(isPhone: false, contactInfo: 'example@mail.com')

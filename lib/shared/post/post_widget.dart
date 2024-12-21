@@ -13,8 +13,8 @@ class PostWidget extends StatefulWidget {
   final List<String> postImages;
   final int likes;
   final int comments;
-  final int shares;
 
+  final int shares;
   const PostWidget({
     super.key,
     required this.profileImageUrl,
